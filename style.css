@@ -1,0 +1,57 @@
+body {
+    height: 100vh;
+    background-color: #695151;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heart {
+    font-size: 300px;
+    color: red;
+    animation: heart 1.5s infinite ease-in-out;
+}
+
+.loveButton {
+    position: absolute;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 300px;
+    outline: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+
+.loveButton:active {
+    background: rgb(151, 151, 151);
+}
+
+@keyframes heart {
+    0% {
+        transform: scale(1);
+        transform-origin: center center;
+        transition-timing-function: ease-out;
+    }
+
+    10% {
+        transform: scale(0.90);
+        transition-timing-function: ease-in;
+    }
+
+    17% {
+        transform: scale(0.95);
+        transition-timing-function: ease-out;
+    }
+
+    33% {
+        transform: scale(0.85);
+        transition-timing-function: ease-in;
+    }
+
+    45% {
+        transform: scale(1);
+        transition-timing-function: ease-out;
+    }
+}
