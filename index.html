@@ -14,7 +14,8 @@
     <button class="loveButton">таптап</button>
     <script>
         const funcOfLove = () => {
-            prompt('Я тебя люблю!!!');
+            let res = prompt('Я тебя люблю!!!', '');
+            return res;
         }
         const buttonOfLove = document.querySelector('.loveButton');
         buttonOfLove.onclick = funcOfLove;
